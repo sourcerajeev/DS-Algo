@@ -18,5 +18,13 @@ public class GraphMain {
             }
             System.out.println();
         }
+
+        BFS bfs = new BFS();
+        System.out.println("BFS traversal starting from vertex 0:");
+        bfs.bfs(graph, 0);
+
+        DFS dfs = new DFS();
+        System.out.println("\nDFS traversal starting from vertex 0:");
+        dfs.dfs(graph, 0);
     }
 }
