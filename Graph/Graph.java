@@ -24,7 +24,7 @@ public class Graph {
     }
 
     public List<Integer> getAdjacencyList(int vertex) {
-        return adjacencyList.get(vertex);
+        return adjacencyList.getOrDefault(vertex, new LinkedList<>());
     }
 
     public int getVertices() {
